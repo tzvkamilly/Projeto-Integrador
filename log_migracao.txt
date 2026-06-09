@@ -1,0 +1,20 @@
+[2026-06-02 10:01:35] ============================================================
+[2026-06-02 10:01:35] INÍCIO DA MIGRAÇÃO - Sistema X → Sistema Y
+[2026-06-02 10:01:35] ============================================================
+[2026-06-02 10:01:35] Extração: 5 clientes e 7 pedidos lidos do Sistema X.
+[2026-06-02 10:01:35] Consultando IA para análise dos dados...
+[2026-06-02 10:01:35] Análise da IA recebida:
+[2026-06-02 10:01:35]   → Padronizar formato de telefone para (XX) XXXXX-XXXX
+[2026-06-02 10:01:35]   → Converter status de pedidos para inglês: entregue→delivered, pendente→pending, em_transito→in_transit
+[2026-06-02 10:01:35]   → Adicionar campo 'created_at' com timestamp da migração
+[2026-06-02 10:01:35]   Observação: Dados com boa consistência. Telefones sem máscara uniforme.
+[2026-06-02 10:01:35]   Mapeamento de campos: {'nome': 'full_name', 'email': 'email_address', 'telefone': 'phone_number', 'cidade': 'city', 'estado': 'state_code', 'data_cadastro': 'registration_date'}
+[2026-06-02 10:01:35] Aplicando transformações nos dados...
+[2026-06-02 10:01:35] Carga concluída: 5 clientes e 7 pedidos inseridos no Sistema Y (banco_sistema_y.db).
+[2026-06-02 10:01:35] Script SQL exportado: banco_sistema_y.sql
+[2026-06-02 10:01:35] ============================================================
+[2026-06-02 10:01:35] MIGRAÇÃO CONCLUÍDA COM SUCESSO
+[2026-06-02 10:01:35]   Banco destino : banco_sistema_y.db
+[2026-06-02 10:01:35]   Script SQL    : banco_sistema_y.sql
+[2026-06-02 10:01:35]   Log completo  : log_migracao.txt
+[2026-06-02 10:01:35] ============================================================
